@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script src="/static/js/jquery-3.3.1.min.js"></script>
+	<script>
+		function test() {
+			$.get("/demoapp/test",function(data){
+				alert(data["message"]);
+				$("#result").html( JSON.stringify(data));
+			});
+		}
+	</script>
+</head>
+
+
+<body>
+	<div align="center">
+		<button type="button" onclick="test()" style="font-size:40px;background-color: blue;">TEST</button>
+		<div style="font-size:20px;font-color:red" id="result"></div>
+	</div>
+</body>
+</html>

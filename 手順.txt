@@ -1,0 +1,5 @@
+1.Envirement
+	install python && Django
+2.start test server
+	python manage.py runserver
+	
